@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24 Solver</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type="number"] {
+        appearance: textfield;
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>20 Solver</h1>
+      <div class="input-container">
+        <input type="number" id="num1" min="1" max="30" required />
+        <input type="number" id="num2" min="1" max="30" required />
+        <input type="number" id="num3" min="1" max="30" required />
+        <input type="number" id="num4" min="1" max="30" required />
+      </div>
+      <div class="button-container">
+        <button id="solveBtn" class="solve-btn">Solve</button>
+      </div>
+      <div class="small-button-container">
+        <button id="resetBtn" class="small-btn"><b>Reset</b></button>
+        <button id="randomBtn" class="small-btn"><b>Random</b></button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="algoritma20Solver.js"></script>
+  </body>
+</html>
