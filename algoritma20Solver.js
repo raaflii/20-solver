@@ -53,13 +53,13 @@ function cekBentukOperasi(a, b, c, d, op1, op2, op3) {
 }
 
 function solve() {
-  const num1 = parseInt(document.getElementById("num1").value);
-  const num2 = parseInt(document.getElementById("num2").value);
-  const num3 = parseInt(document.getElementById("num3").value);
-  const num4 = parseInt(document.getElementById("num4").value);
+  const num1 = document.getElementById("num1").value;
+  const num2 = document.getElementById("num2").value;
+  const num3 = document.getElementById("num3").value;
+  const num4 = document.getElementById("num4").value;
 
   if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4)) {
-    alert("Masukkan Angka yang Valid");
+    alert("Masukkan Angka (Integer) yang Valid");
     return;
   }
 
