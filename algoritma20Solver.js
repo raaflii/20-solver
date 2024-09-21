@@ -70,7 +70,7 @@ function solve() {
   if (hasil.size === 0) {
     resultDiv.innerHTML = "<p>Tidak ada solusi</p>";
   } else {
-    resultDiv.innerHTML = `<p>Terdapat solusi sebanyak: ${hasil.size}</p>`;
+    resultDiv.innerHTML = `<p>Terdapat solusi sebanyak : ${hasil.size}</p>`;
     hasil.forEach((element) => {
       resultDiv.innerHTML += `<p>${element}</p>`;
     });
