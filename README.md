@@ -37,6 +37,10 @@ This solver uses *Brute Force Algorithm* to generate all combinations of four nu
 ## Screenshot
 ![image](https://github.com/user-attachments/assets/1697995f-80fa-4209-b467-186327ece908)
 
+## Demo Video
+
+https://github.com/user-attachments/assets/a8ecb51c-8b99-4906-bbbf-40247bf3422a
+
 ## Team
 
 Muhamad Afrians Suwandi - L0123087
