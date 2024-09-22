@@ -36,11 +36,16 @@ function algoritma20Solver(angka) {
 
 function cekBentukOperasi(a, b, c, d, op1, op2, op3) {
   const bentukOperasi = [
-    `${a} ${op1} (${b} ${op2} (${c} ${op3} ${d}))`,
-    `${a} ${op1} ((${b} ${op2} ${c}) ${op3} ${d})`,
-    `((${a} ${op1} ${b}) ${op2} ${c}) ${op3} ${d}`,
-    `(${a} ${op1} (${b} ${op2} ${c})) ${op3} ${d}`,
-    `(${a} ${op1} ${b}) ${op2} (${c} ${op3} ${d})`,
+    //a $ (b $ (c $ d))
+    `${a} ${op1} (${b} ${op2} (${c} ${op3} ${d}))`, 
+    //a $ ((b $ c) $ d)
+    `${a} ${op1} ((${b} ${op2} ${c}) ${op3} ${d})`, 
+    //((a $ b) $ c) $ d
+    `((${a} ${op1} ${b}) ${op2} ${c}) ${op3} ${d}`, 
+    //(a $ (b $ c)) $ d
+    `(${a} ${op1} (${b} ${op2} ${c})) ${op3} ${d}`, 
+    //(a $ b) $ (c $ d)
+    `(${a} ${op1} ${b}) ${op2} (${c} ${op3} ${d})`, 
   ];
 
   bentukOperasi.forEach((bentukOperasi) => {
@@ -58,7 +63,7 @@ function solve() {
   const num3 = document.getElementById("num3").value;
   const num4 = document.getElementById("num4").value;
 
-  if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4)) {
+  if (num1 === "" || num2 === "" || num3 === "" || num4 === "" || isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4)) {
     alert("Masukkan Angka (Integer) yang Valid");
     return;
   }
